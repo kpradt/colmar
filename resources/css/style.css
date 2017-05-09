@@ -30,7 +30,7 @@ body{
   align-items: center;
 }
 .logo img {
-  padding-left: 4rem;
+  padding-left: 1.5rem;
   padding-right: .5rem;
 }
 .firstword { color: black; font-weight: bold; }
@@ -44,7 +44,7 @@ body{
   align-items: center;
 }
 .menu:last-child {
-  padding-right: 4rem;
+  padding-right: 1.5rem;
 }
 .menu-item {
   color: gray;
@@ -57,20 +57,53 @@ body{
 }
 
 /* first section: banner w image & start link */
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 2px dotted pink;
+  background-color: lightgray;
+}
+.banner-image {
+  width: 60%;
+  overflow: hidden;
+  margin: 1.5rem 2rem;
+}
+.banner-text {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.banner-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: .5rem;
+}
+.banner-text span {
+  font-size: 1.25rem;
+  margin-left: .5rem;
+}
+.banner-text .button {
+  margin-left: .5rem;
+  padding: .5rem 5rem;
+  text-align: center;
+  background-color: darkgray;
+  color: white;
+}
+
+/* second section: misc info, images, events */
 .container {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
-.banner-image {}
-.banner-text {
-  display: flex;
-  flex-direction: column;
-}
-
-h1 {}
-
-
-/* second section: misc info, images, events */
 .info1 {
   display: flex;
   flex-direction: row;
