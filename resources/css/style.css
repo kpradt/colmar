@@ -2,15 +2,58 @@
 
 /* universal styles */
 html {
-
+  font-size: 16px;
 }
 body{
-
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
+
+/* css for visible content of landing page */
+
+/* header/main menu bar */
 .header {
+  width: 100%;
+  height: 4rem;
   display: flex;
   flex-direction: row;
+  border: 2px dotted lightblue;
+  justify-content: space-between;
+  align-items: center;
+}
+  /* left side of menu bar */
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo img {
+  padding-left: 4rem;
+  padding-right: .5rem;
+}
+.firstword { color: black; font-weight: bold; }
+.secondword {color: lightgray; }
+  /* right side of menu bar */
+.menu {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu:last-child {
+  padding-right: 4rem;
+}
+.menu-item {
+  color: gray;
+}
+
+.menu-divider {
+  height: inherit;
+  width: 1rem;
+  background-color: aqua;
 }
 
 /* first section: banner w image & start link */
@@ -85,7 +128,9 @@ h3 {}
   flex-direction: column;
 }
 
+/* possibly unnecessary class
 .exhibit {
   display: flex;
   flex-direction: row;
 }
+*/
