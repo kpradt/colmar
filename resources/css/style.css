@@ -1,0 +1,91 @@
+/* Stylesheet for Colmar Academy project */
+
+/* universal styles */
+html {
+
+}
+body{
+
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+/* first section: banner w image & start link */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.banner-image {}
+.banner-text {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {}
+
+
+/* second section: misc info, images, events */
+.info1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.info1-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.info1-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {}
+
+h3 {}
+
+
+/* third section: subject areas */
+
+.info2 {
+  display: flex;
+  flex-direction: row;
+}
+.subject {
+    display: flex;
+    flex-direction: column;
+}
+
+/* fourth section: thesis exhibits */
+
+.info3 {
+    display: flex;
+    flex-direction: row;
+}
+.info3-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.info3-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit {
+  display: flex;
+  flex-direction: row;
+}
