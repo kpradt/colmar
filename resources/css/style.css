@@ -67,7 +67,7 @@ body{
 .banner-image {
   width: 60%;
   overflow: hidden;
-  margin: 1.5rem 2rem;
+  margin: 2rem 1.5rem;
 }
 .banner-text {
   max-width: 40%;
@@ -100,30 +100,41 @@ h1 {
 
 /* second section: misc info, images, events */
 .container {
+  background-color: white;
   width: 100%;
   display: flex;
   flex-direction: row;
+  border: 1px solid black;
 }
 .info1 {
   display: flex;
   flex-direction: row;
 }
-
 .info1-left {
+  width: 60%;
   display: flex;
   flex-direction: column;
+  border: 1px dotted black;
 }
-
+.info1-left img {
+  width: 100%;
+  overflow: hidden;
+  margin: 2rem 1.5rem;
+}
 .info1-right {
+  width: 423px;
   display: flex;
   flex-direction: column;
+  border: 1px solid blue;
 }
-
 .info-item {
   display: flex;
   flex-direction: row;
+  border: .5px solid lightgray;
 }
-
+.info-item img {
+  width: 35%;
+}
 .info-item-text {
   display: flex;
   flex-direction: column;
@@ -137,14 +148,25 @@ h3 {}
 /* third section: subject areas */
 
 .info2 {
+  background-color: gray;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  border: 1px solid pink;
+}
+.info2 h1 {
+  text-align: center;
+  margin: 32px 0;
 }
 .subject {
+    width: 30%;
+    margin: 1.5rem 2rem;
     display: flex;
     flex-direction: column;
+    border: 2px solid red;
 }
-
+.subject-text {
+  margin: 16px 0 24px 16px;
+}
 /* fourth section: thesis exhibits */
 
 .info3 {
