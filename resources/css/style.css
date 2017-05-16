@@ -6,22 +6,26 @@ html {
 }
 body{
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  padding: 0 0 0 5%;
+  width: 90%;
+  font-family: "Raleway", sans-serif;
 }
 
 
-/* css for visible content of landing page */
+/* desktop css for visible content of landing page */
 
 /* header/main menu bar */
-.header {
+header {
   width: 100%;
   height: 4rem;
   display: flex;
   flex-direction: row;
-  border: 2px dotted lightblue;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+header span {
+  margin: 0;
+  padding: 0;
 }
   /* left side of menu bar */
 .logo {
@@ -33,11 +37,13 @@ body{
   padding-left: 1.5rem;
   padding-right: .5rem;
 }
-.firstword { color: black; font-weight: bold; }
+.firstword {
+  color: darkred;
+  font-weight: 900; }
 .secondword {color: lightgray; }
   /* right side of menu bar */
-.menu {
-  display: inline-flex;
+nav {
+  display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-end;
@@ -49,11 +55,10 @@ body{
 .menu-item {
   color: gray;
 }
-
 .menu-divider {
-  height: inherit;
+  height: 4rem;
   width: 1rem;
-  background-color: aqua;
+  background-color: lightgray;
 }
 
 /* first section: banner w image & start link */
@@ -61,20 +66,23 @@ body{
   width: 100%;
   display: flex;
   flex-direction: row;
-  border: 2px dotted pink;
   background-color: lightgray;
 }
 .banner-image {
   width: 60%;
-  overflow: hidden;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 2rem 1.5rem;
 }
 .banner-text {
   max-width: 40%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 3rem 0;
 }
 .banner-text a {
   text-decoration: none;
@@ -110,39 +118,72 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+/* left column: large photo & quote */
 .info1-left {
   width: 60%;
+  height: auto;
   display: flex;
   flex-direction: column;
   border: 1px dotted black;
 }
-.info1-left img {
-  width: 100%;
-  overflow: hidden;
+.info1-leftimage {
+  height: 300px;
+  background-image: url("../images/information-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
   margin: 2rem 1.5rem;
 }
+.info1-left h2, p, span {
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+
+/* right column of first info section */
 .info1-right {
-  width: 423px;
+  width: 40%;
   display: flex;
   flex-direction: column;
   border: 1px solid blue;
+  margin: 1rem 0;
 }
 .info-item {
   display: flex;
   flex-direction: row;
+  align-items: center;
   border: .5px solid lightgray;
 }
 .info-item img {
   width: 35%;
+  height: 35%;
+  margin: 1rem;
 }
 .info-item-text {
   display: flex;
   flex-direction: column;
 }
+.info-item a {
+  text-decoration: none;
+  margin: 0;
+}
+.info-item p {
+  margin: 0;
+}
 
-h2 {}
+.feature {
+    background-color: lightgray;
+}
 
-h3 {}
+h2 {
+  margin: 2rem 0 0 0;
+}
+
+h3 {
+  font-size: .75rem;
+  font-weight: lighter;
+  color: gray;
+  margin: .5rem 1rem .5rem 0;
+}
 
 
 /* third section: subject areas */
@@ -157,35 +198,171 @@ h3 {}
   text-align: center;
   margin: 32px 0;
 }
+.container-top {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+}
+.container-bottom {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+}
 .subject {
-    width: 30%;
-    margin: 1.5rem 2rem;
+    width: 27%;
+    margin: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     border: 2px solid red;
 }
+.subject h2 {
+  margin: 1rem 0 0 1rem;
+}
+.subject h4 {
+  margin-left: 1rem;
+}
+.subject p {
+  margin-left: 1rem;
+}
 .subject-text {
-  margin: 16px 0 24px 16px;
+  margin: 1rem 0 1.5rem 1rem;
+}
+.subject-image {
+  width: 100%;
+  height: 180px;
+  background-color: dodgerblue;
+}
+
+#subjectimg1 {
+  background-image: url("../images/course-software.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg2 {
+  background-image: url("../images/course-computer-art.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg3 {
+  background-image: url("../images/course-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg4 {
+  background-image: url("../images/course-data.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg5 {
+  background-image: url("../images/course-business.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg6 {
+  background-image: url("../images/course-marketing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* fourth section: thesis exhibits */
 
 .info3 {
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+}
+.info3 h1 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.info3-exhibits {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid aqua;
 }
 .info3-left {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  margin: 0 24px;
+  padding: 1rem 2rem;
+  border: 1px solid blue;
+}
+.info3-left h2 {
+  margin: 1.5rem 0;
+}
+.info3-left p {
+  margin: 0 0 2rem 0;
+  padding: 0;
 }
 
 .info3-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.exhibit-item {
+  height: 168px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: .5px solid lightgray;
+}
+.exhibit-item img {
+  width: 35%;
+  height: 136px;
+  margin: 0 1rem;
+}
+.exhibit-item-text {
   display: flex;
   flex-direction: column;
 }
 
-/* possibly unnecessary class
-.exhibit {
+/* footer w copyright info*/
+footer {
+  width: 100%;
+  border-top: 2px solid gray;
+  background-color: rebeccapurple;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-*/
+footer a, a:visited{
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  text-decoration: none;
+  color: darkred;
+}
+footer a:active {
+  text-decoration: none;
+  color: gray;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
