@@ -1,0 +1,540 @@
+/* Stylesheet for Colmar Academy project */
+
+/* universal/desktop styles */
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0 0 0 5%;
+  width: 90%;
+  font-family: "Cormorant Garamond", serif;
+}
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  color: darkred;
+}
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 24px;
+  color: dimgray;
+}
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  color: dimgray;
+}
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  margin: .5rem 0;
+  color: dimgray;
+}
+h5 {
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.feature {
+    background-color: lightgray;
+}
+
+.mobile-header {display: none;}
+.banner-text-mobile { display: none; }
+.mobile-sub { display: none; }
+.mobile-info { display: none; }
+
+
+/* desktop css for visible content of landing page */
+
+/* header/main menu bar */
+header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header span {
+  margin: 0;
+  padding: 0;
+}
+
+  /* left side of menu bar */
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo img {
+  padding-left: 1.5rem;
+  padding-right: .5rem;
+}
+.firstword {
+  color: darkred;
+  font-weight: 900; }
+.secondword {color: lightgray; }
+  /* right side of menu bar */
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+.menu-divider {
+  height: 4rem;
+  width: 1rem;
+  background-color: lightgray;
+}
+/* this menu divider has got to be the ugliest design element I've ever seen */
+nav a {
+  text-decoration: none;
+  color: gray;
+}
+nav a:hover {
+  text-decoration: none;
+  color: darkred;
+}
+nav a:active {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* first section: banner w image & start link */
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+}
+.banner-image {
+  width: 60%;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2rem 1.5rem;
+}
+.banner-text {
+  max-width: 40%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 0;
+}
+.banner-text a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  margin-left: .5rem;
+}
+.banner-text span {
+  font-size: 1.25rem;
+  margin-left: .5rem;
+}
+.button {
+  margin-left: .5rem;
+  padding: .5rem 5rem;
+  text-align: center;
+  background-color: darkred;
+}
+
+
+
+/* second section: misc info, images, events */
+.container {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.info1 {
+  display: flex;
+  flex-direction: row;
+}
+/* left column: large photo & quote */
+.info1-left {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.info1-leftimage {
+  height: 300px;
+  background-image: url("../images/information-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin: 2rem 1.5rem;
+}
+.info1-left h2, p, span {
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+.tagline {
+  font-style: italic;
+}
+
+/* right column of first info section */
+.info1-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  border-left: .5px solid lightgray;
+}
+.info-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: .5px solid lightgray;
+}
+.info-item img {
+  width: 35%;
+  height: 35%;
+  margin: 1rem;
+}
+.info-item-text {
+  display: flex;
+  flex-direction: column;
+}
+.info-item a {
+  text-decoration: none;
+  margin: 0;
+}
+.info-item a:hover {
+  text-decoration: none;
+  color: darkred;
+  margin: 0;
+}
+.info-item p {
+  margin: 0;
+}
+h2 {
+  margin: 2rem 0 0 0;
+}
+
+h3 {
+  font-size: .75rem;
+  font-weight: lighter;
+  color: gray;
+  margin: .5rem 1rem .5rem 0;
+}
+
+
+/* third section: subject areas */
+
+.info2 {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+.info2 h1 {
+  text-align: center;
+  margin: 32px 0;
+}
+.container-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.subject {
+    width: 27%;
+    margin: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+.subject h2 {
+  margin: 1rem 0 0 1rem;
+}
+.subject h4 {
+  margin-left: 1rem;
+  color: gray;
+}
+.subject p {
+  margin-left: 1rem;
+}
+.subject-text {
+  margin: 1rem 0 1.5rem 1rem;
+}
+.subject-image {
+  width: 100%;
+  height: 180px;
+  background-color: dodgerblue;
+}
+
+
+#subjectimg1 {
+  background-image: url("../images/course-software.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg2 {
+  background-image: url("../images/course-computer-art.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg3 {
+  background-image: url("../images/course-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg4 {
+  background-image: url("../images/course-data.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg5 {
+  background-image: url("../images/course-business.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subjectimg6 {
+  background-image: url("../images/course-marketing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* fourth section: thesis exhibits */
+
+.info3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+.info3 h1 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.info3-exhibits {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.info3-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  margin: 0 1.5rem;
+}
+.info3-left h2 {
+  margin: 1.5rem 0;
+}
+.info3-left p {
+  margin: 0;
+  padding: 0;
+}
+
+.info3-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.exhibit-item {
+  height: 168px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: .5px solid lightgray;
+}
+.exhibit-item img {
+  width: 35%;
+  height: 136px;
+  margin: 0 1rem;
+}
+.exhibit-item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer w copyright info*/
+footer {
+  width: 100%;
+  border-top: 2px solid gray;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+footer a:hover {
+  color: darkred;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* mobile version: browser window sized under 780 px */
+@media only screen and (max-width:780px) {
+
+/* change header from logo/menu to menu bar with icons */
+  .logo  { display: none; }
+  nav { display: none; }
+  .mobile-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  .info3-right { display: none; }
+  .info3-left-text { display: none; }
+  .info3-left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+
+/* smaller mobile: sized under 640px */
+@media only screen and (max-width:640px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .banner-image {
+    height: 180px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner-text { display: none; }
+  .banner-text-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .banner-text-mobile a { color: white; }
+  h1.mobile {
+    margin: 2.5rem 1rem 1rem 1rem;
+    padding: 0;
+  }
+  span.mobile {
+    margin: 0 1rem;
+  }
+  h5.mobile {
+    margin: 2rem 1rem 2.5rem 1rem;
+    color: white;
+  }
+
+/* first info section: right-side info items only */
+  .info1-left {display: none; }
+  .info1-right { display: none; }
+
+  .mobile-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-info-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-info-image {
+    width: 100%;
+    height: 180px;
+    background-color: blue;
+  }
+  #orientation {
+    width: 100%;
+    height: 180px;
+    margin-top: 1rem;
+    background-image: url("../images/information-orientation-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #campus {
+    width: 100%;
+    height: 180px;
+    background-image: url("../images/information-campus-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #guest {
+    width: 100%;
+    height: 180px;
+    background-image: url("../images/information-guest-lecture-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 16px;
+  }
+
+  .mobile-info-text {
+    margin-left: 2rem;
+    text-align: left;
+  }
+  .mobile-info-text p { margin: 1rem 0; }
+  .mobile-info-text h3 { font-size: 1rem; }
+/* course subjects section: no images, subject names in boxes only */
+  .container-top { display: none; }
+  .container-bottom { display: none; }
+  .mobile-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .mobile-sub h2 {
+    padding: 2rem 1rem;
+    margin: .5rem 1rem;
+    color: darkred;
+    background-color: lightgray;
+  }
+/* footer: copyright only, no links*/
+  .right { display: none; }
+}
