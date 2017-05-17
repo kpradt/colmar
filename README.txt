@@ -1,6 +1,6 @@
 Capstone project, Freelance Web Development (Codecademy, May 2017)
 Katherine Pradt (katherine@pradt.info)
-Completed webpage is viewable at colmar.katherinepradt.com
+Completed webpage has been deployed at colmar.katherinepradt.com
 Project summation:
   Coding and designing responsive landing page
   for fictional school based on wireframes provided
